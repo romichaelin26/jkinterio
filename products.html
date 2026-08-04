@@ -24,50 +24,35 @@
 </head>
 <body class="bg-fafafa">
 
-    <!-- Navigation Header -->
-    <header class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="brand-logo" id="brand-logo">
-                <div class="logo-text">
-                    <span class="brand-title">JK INTERIO</span>
-                    <span class="brand-tagline">Steel & Wood Legacy</span>
-                </div>
-            </a>
-            
-            <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li>
-                    <li class="nav-item"><a href="index.html#visualizer" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Visualizer</a></li>
-                    <li class="nav-item"><a href="index.html#estimator" class="nav-link"><i class="fa-solid fa-calculator text-gold"></i> Cost Estimator</a></li>
-                    <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
-                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-
-            <div class="nav-actions">
-                <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20browsing%20your%20products%20catalog." target="_blank" class="btn btn-whatsapp hide-mobile">
-                    <i class="fa-brands fa-whatsapp"></i> Chat Now
-                </a>
-                <a href="index.html#estimator" class="btn btn-primary id-btn-quote">Get Quote</a>
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+    <!-- Compact Distraction-Free Header (64px) -->
+    <header class="products-compact-header">
+        <div class="container flex-between align-center" style="width: 100%;">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu" style="background: none; border: none; font-size: 1.2rem; color: #1F2937; cursor: pointer;">
                     <i class="fa-solid fa-bars"></i>
                 </button>
+                <a href="products.html" class="header-page-title">Products</a>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 0.8rem;">
+                <a href="index.html" class="header-link hide-mobile" style="color: #6B7280; text-decoration: none; font-weight: 500; font-size: 0.9rem;">Home</a>
+                <button class="header-action-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20browsing%20the%20products%20catalog." target="_blank" class="btn btn-pill btn-forest"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Search Banner -->
-    <section class="catalog-hero section-padding bg-dark text-white text-center">
+    <!-- Main Content Section: 1. Products Title -> 2. Search -> 3. Category Chips -->
+    <section class="products-page-padding bg-fafafa" style="padding-bottom: 1.5rem;">
         <div class="container">
-            <span class="badge badge-hero"><i class="fa-solid fa-couch text-gold"></i> Full Service Furniture & Interior Showroom</span>
-            <h1 class="section-title text-white">Exclusive Interior & Furniture Catalog</h1>
-            <p class="section-description text-light">Explore custom-built modular interiors and ready-made furniture designed for modern Kerala homes.</p>
+            <!-- 1. Products Title & Subtitle -->
+            <div class="mb-3">
+                <h1 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: #1F2937; margin: 0; line-height: 1.1;">Products Catalog</h1>
+                <p style="color: #6B7280; margin-top: 0.3rem; font-size: 0.95rem;">Explore custom modular interiors and ready-made furniture collections.</p>
+            </div>
 
-            <!-- Clean Search Input Box -->
-            <div class="catalog-search-wrapper mt-4">
+            <!-- 2. Search Bar -->
+            <div class="catalog-search-wrapper mt-3">
                 <div class="search-input-group">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     <input type="text" id="catalog-search-input" class="search-input" placeholder="Search modular kitchens, bedroom sets, TV units, sofas, dining tables...">
@@ -75,7 +60,7 @@
                 </div>
             </div>
 
-            <!-- Icon-Based Category Selector (Swipeable on Mobile) -->
+            <!-- 3. Category Chips (Swipeable Icon Cards) -->
             <div class="cat-icon-scroll-wrapper mt-4">
                 <div class="cat-icon-grid">
                     <div class="cat-icon-card active" data-cat="all"><i class="fa-solid fa-grid-2"></i> <span>All Collections</span></div>

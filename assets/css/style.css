@@ -2594,5 +2594,54 @@ html, body {
     background-color: #FAFAFA !important;
 }
 
+/* Compact Distraction-Free Header (64px) for Products Page */
+.products-compact-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #E5E7EB;
+    display: flex;
+    align-items: center;
+}
+
+.header-page-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #1F2937;
+    text-decoration: none;
+    letter-spacing: -0.3px;
+}
+
+.header-action-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #E5E7EB;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #374151;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.header-action-btn:hover {
+    border-color: var(--forest-green);
+    color: var(--forest-green);
+    background: #F0FDF4;
+}
+
+.products-page-padding {
+    padding-top: 5.5rem;
+}
+
 
 
