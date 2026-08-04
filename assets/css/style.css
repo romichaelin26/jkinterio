@@ -2268,10 +2268,14 @@ html, body {
 }
 
 @media (min-width: 1024px) {
+    .responsive-product-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+}
+
+@media (min-width: 1441px) {
     .responsive-product-grid { grid-template-columns: repeat(4, 1fr); gap: 1.8rem; }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
     .responsive-product-grid { grid-template-columns: repeat(5, 1fr); gap: 2rem; }
 }
 
