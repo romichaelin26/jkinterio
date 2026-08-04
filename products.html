@@ -40,33 +40,31 @@
     </div>
 
     <!-- Navigation Header -->
-    <header class="header sticky-header" id="main-header">
-        <div class="container flex-between">
-            <a href="index.html" class="logo-brand">
-                <img src="assets/images/logo.jpg" alt="JK INTERIO Logo" class="nav-logo">
-                <div class="logo-text">
-                    <span class="brand-title">JK INTERIO</span>
-                    <span class="brand-tagline">Steel & Wood Legacy</span>
-                </div>
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo" id="brand-logo">
+                <img src="assets/images/logo.jpg" alt="JK INTERIO Logo" class="nav-logo-img">
             </a>
-
+            
             <nav class="nav-menu" id="nav-menu">
-                <ul>
-                    <li><a href="index.html#home" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="products.html" class="nav-link active">Products</a></li>
-                    <li><a href="index.html#visualizer" class="nav-link">3D Visualizer</a></li>
-                    <li><a href="index.html#estimator" class="nav-link">Cost Estimator</a></li>
-                    <li><a href="index.html#gallery" class="nav-link">Portfolio</a></li>
-                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link active">Products</a></li>
+                    <li class="nav-item"><a href="index.html#visualizer" class="nav-link"><i class="fa-solid fa-wand-magic-sparkles text-gold"></i> Visualizer</a></li>
+                    <li class="nav-item"><a href="index.html#estimator" class="nav-link"><i class="fa-solid fa-calculator text-gold"></i> Cost Estimator</a></li>
+                    <li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
 
-            <div class="header-actions">
-                <a href="index.html#estimator" class="btn btn-outline btn-sm hide-mobile"><i class="fa-solid fa-calculator"></i> Estimator</a>
-                <a href="tel:+919605620113" class="btn btn-primary btn-sm"><i class="fa-solid fa-phone"></i> Call Now</a>
-                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+            <div class="nav-actions">
+                <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20browsing%20your%20products%20catalog." target="_blank" class="btn btn-whatsapp hide-mobile">
+                    <i class="fa-brands fa-whatsapp"></i> Chat Now
+                </a>
+                <a href="index.html#estimator" class="btn btn-primary id-btn-quote">Get Quote</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
@@ -151,31 +149,12 @@
                             <label class="filter-cb"><input type="checkbox" name="type_filter" value="ready"> Ready-Made Furniture</label>
                         </div>
                     </div>
-
-                    <!-- Style Filter -->
-                    <div class="filter-group mt-4">
-                        <h4 class="filter-title">Design Style</h4>
-                        <div class="filter-options">
-                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="modern"> Modern Minimalist</label>
-                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="luxury"> Luxury Villa</label>
-                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="kerala"> Traditional Kerala</label>
-                        </div>
-                    </div>
                 </aside>
 
                 <!-- Product Grid Area -->
                 <main class="catalog-main">
                     <div class="catalog-top-bar flex-between mb-3">
-                        <span class="results-count" id="results-count">Showing 6 Premium Products</span>
-                        <div class="sort-wrapper">
-                            <label for="sort-select">Sort By: </label>
-                            <select id="sort-select" class="form-control-sm">
-                                <option value="popular">Best Sellers</option>
-                                <option value="price_low">Price: Low to High</option>
-                                <option value="price_high">Price: High to Low</option>
-                                <option value="newest">New Arrivals</option>
-                            </select>
-                        </div>
+                        <span class="results-count" id="results-count">Showing 12 Premium Products</span>
                     </div>
 
                     <!-- Products Grid -->
@@ -332,6 +311,84 @@
                                         <span class="price-val">₹ 78,000</span>
                                     </div>
                                     <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Italian%20Marble%20Dining%20Set" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 7: Office Furniture -->
+                        <div class="product-card" data-cat="office" data-mat="bwp" data-type="ready" data-style="modern" data-price="42000">
+                            <div class="product-img-box">
+                                <span class="prod-badge bg-gold">Executive</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Executive Office Desk">
+                                <button class="btn-quick-view" data-id="prod7">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Office Furniture</span>
+                                <h4>Executive Manager Desk with High-Back Ergonomic Chair</h4>
+                                <p class="prod-desc">Spacious executive desk with side drawer unit, cable pass-through, and high-back lumbar mesh chair.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-briefcase"></i> Executive Pack</span>
+                                    <span><i class="fa-solid fa-chair"></i> Ergonomic</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Package Price</span>
+                                        <span class="price-val">₹ 42,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Executive%20Office%20Desk" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 8: Storage Utility -->
+                        <div class="product-card" data-cat="storage" data-mat="teak" data-type="ready" data-style="modern" data-price="28000">
+                            <div class="product-img-box">
+                                <span class="prod-badge">Space Saver</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Shoe Storage Cabinet">
+                                <button class="btn-quick-view" data-id="prod8">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Storage Furniture</span>
+                                <h4>Cushioned Entryway Shoe Rack & Storage Bench</h4>
+                                <p class="prod-desc">Multi-tier shoe cabinet with top seating cushion, umbrella holder, and key drawer.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-shoe-prints"></i> 24 Pairs</span>
+                                    <span><i class="fa-solid fa-couch"></i> Cushioned</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Ready Made</span>
+                                        <span class="price-val">₹ 28,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Cushioned%20Shoe%20Rack" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 9: Custom Woodwork -->
+                        <div class="product-card" data-cat="custom" data-mat="teak" data-type="custom" data-style="kerala" data-price="95000">
+                            <div class="product-img-box">
+                                <span class="prod-badge bg-gold">Heritage Wood</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Carved Teak Door">
+                                <button class="btn-quick-view" data-id="prod9">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Custom Furniture</span>
+                                <h4>Hand-Carved Solid Teak Main Entrance Door</h4>
+                                <p class="prod-desc">Hand-crafted solid teak wood main door with brass fittings and weather-resistant PU finish.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-door-closed"></i> Solid Teak</span>
+                                    <span><i class="fa-solid fa-pen-ruler"></i> Hand Carved</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Custom Size</span>
+                                        <span class="price-val">₹ 95,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Solid%20Teak%20Main%20Door" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
                                 </div>
                             </div>
                         </div>

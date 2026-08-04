@@ -804,6 +804,27 @@ document.addEventListener('DOMContentLoaded', () => {
             price: '₹ 78,000',
             desc: '6-Seater dining table with Calacatta quartz marble top, solid teak wood frame, and 6 ergonomic cushioned chairs.',
             img: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80'
+        },
+        'prod7': {
+            title: 'Executive Manager Desk with Ergonomic Chair',
+            cat: 'Office Furniture',
+            price: '₹ 42,000',
+            desc: 'Spacious executive manager desk with side lockable drawer unit, built-in wire pass-through, and high-back lumbar mesh chair.',
+            img: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80'
+        },
+        'prod8': {
+            title: 'Cushioned Entryway Shoe Rack Bench',
+            cat: 'Storage Furniture',
+            price: '₹ 28,000',
+            desc: 'Multi-tier solid wood shoe cabinet storing up to 24 pairs with top seating cushion, umbrella stand, and key drawer.',
+            img: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80'
+        },
+        'prod9': {
+            title: 'Hand-Carved Solid Teak Main Entrance Door',
+            cat: 'Custom Woodwork',
+            price: '₹ 95,000',
+            desc: 'Traditional hand-carved solid teak wood main entrance door with brass fixtures, multi-point lock, and weatherproof PU coating.',
+            img: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80'
         }
     };
 
