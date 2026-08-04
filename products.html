@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog - Ready-Made Furniture & Custom Interiors | JK INTERIO</title>
+    <meta name="description" content="Explore JK INTERIO's premium collection of modular kitchens, bedroom sets, TV units, wardrobes, sofas, dining tables, and custom furniture in Kollam, Kerala.">
+    
+    <!-- Google Fonts: Manrope (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <meta name="theme-color" content="#1E2229">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar bg-dark text-white py-1">
+        <div class="container flex-between">
+            <div class="top-info">
+                <span><i class="fa-solid fa-location-dot text-gold"></i> JK Building, JK Junction, Chandanathope, Kollam - 691014</span>
+                <span class="ml-3 hide-mobile"><i class="fa-solid fa-phone text-gold"></i> +91 96056 20113</span>
+            </div>
+            <div class="top-actions">
+                <a href="https://www.instagram.com/jkinterio2.0?igsh=MTUzcTczbXhhd2ZnYg==" target="_blank" class="text-white mr-2"><i class="fa-brands fa-instagram text-gold"></i> @jkinterio2.0</a>
+                <a href="https://www.youtube.com/@jkjunction1505" target="_blank" class="text-white mr-2"><i class="fa-brands fa-youtube text-gold"></i> YouTube</a>
+                <a href="https://wa.me/919605620113" target="_blank" class="btn btn-primary btn-xs"><i class="fa-brands fa-whatsapp"></i> Quick Inquiry</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header sticky-header" id="main-header">
+        <div class="container flex-between">
+            <a href="index.html" class="logo-brand">
+                <img src="assets/images/logo.jpg" alt="JK INTERIO Logo" class="nav-logo">
+                <div class="logo-text">
+                    <span class="brand-title">JK INTERIO</span>
+                    <span class="brand-tagline">Steel & Wood Legacy</span>
+                </div>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About Us</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="index.html#visualizer" class="nav-link">3D Visualizer</a></li>
+                    <li><a href="index.html#estimator" class="nav-link">Cost Estimator</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="index.html#estimator" class="btn btn-outline btn-sm hide-mobile"><i class="fa-solid fa-calculator"></i> Estimator</a>
+                <a href="tel:+919605620113" class="btn btn-primary btn-sm"><i class="fa-solid fa-phone"></i> Call Now</a>
+                <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Search Banner -->
+    <section class="catalog-hero section-padding bg-dark text-white text-center">
+        <div class="container">
+            <span class="badge badge-hero"><i class="fa-solid fa-couch text-gold"></i> Full Service Furniture & Interior Showroom</span>
+            <h1 class="section-title text-white">Exclusive Interior & Furniture Catalog</h1>
+            <p class="section-description text-light">Explore custom-built modular interiors and ready-made furniture designed for modern Kerala homes.</p>
+
+            <!-- Search Input Box -->
+            <div class="catalog-search-wrapper mt-4">
+                <div class="search-input-group">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="catalog-search-input" class="search-input" placeholder="Search modular kitchens, bedroom sets, TV units, sofas, dining tables...">
+                    <button class="btn btn-primary" id="catalog-search-btn">Search Catalog</button>
+                </div>
+            </div>
+
+            <!-- Quick Filter Pills -->
+            <div class="category-pills-bar mt-4">
+                <button class="pill-btn active" data-cat="all">All Products</button>
+                <button class="pill-btn" data-cat="kitchen">Modular Kitchens</button>
+                <button class="pill-btn" data-cat="bedroom">Bedroom Sets</button>
+                <button class="pill-btn" data-cat="tv_unit">TV Units</button>
+                <button class="pill-btn" data-cat="wardrobe">Wardrobes</button>
+                <button class="pill-btn" data-cat="living">Living Room</button>
+                <button class="pill-btn" data-cat="dining">Dining Furniture</button>
+                <button class="pill-btn" data-cat="office">Office Furniture</button>
+                <button class="pill-btn" data-cat="storage">Storage Units</button>
+                <button class="pill-btn" data-cat="custom">Custom Furniture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Product Catalog Grid & Filter Sidebar Section -->
+    <section class="product-catalog-section section-padding">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filter-sidebar">
+                    <div class="filter-header">
+                        <h3><i class="fa-solid fa-filter text-gold"></i> Refine Products</h3>
+                        <button class="btn-text-reset" id="reset-filters-btn">Reset All</button>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group mt-3">
+                        <h4 class="filter-title">Category</h4>
+                        <div class="filter-options">
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="kitchen"> Modular Kitchens</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="bedroom"> Bedroom Furniture Sets</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="tv_unit"> TV Entertainment Units</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="wardrobe"> Custom & Sliding Wardrobes</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="living"> Living Room & Sofas</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="dining"> Dining Sets & Crockery</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="office"> Office & Executive Desks</label>
+                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="storage"> Storage & Shoe Racks</label>
+                        </div>
+                    </div>
+
+                    <!-- Material Filter -->
+                    <div class="filter-group mt-4">
+                        <h4 class="filter-title">Material</h4>
+                        <div class="filter-options">
+                            <label class="filter-cb"><input type="checkbox" name="mat_filter" value="bwp"> BWP 710 Marine Plywood</label>
+                            <label class="filter-cb"><input type="checkbox" name="mat_filter" value="teak"> Solid Teak Wood</label>
+                            <label class="filter-cb"><input type="checkbox" name="mat_filter" value="hdhmr"> HDHMR Board</label>
+                            <label class="filter-cb"><input type="checkbox" name="mat_filter" value="glass"> Tinted Toughened Glass</label>
+                            <label class="filter-cb"><input type="checkbox" name="mat_filter" value="quartz"> Calacatta Quartz</label>
+                        </div>
+                    </div>
+
+                    <!-- Product Type Filter -->
+                    <div class="filter-group mt-4">
+                        <h4 class="filter-title">Product Type</h4>
+                        <div class="filter-options">
+                            <label class="filter-cb"><input type="checkbox" name="type_filter" value="custom"> Custom Built Interior</label>
+                            <label class="filter-cb"><input type="checkbox" name="type_filter" value="ready"> Ready-Made Furniture</label>
+                        </div>
+                    </div>
+
+                    <!-- Style Filter -->
+                    <div class="filter-group mt-4">
+                        <h4 class="filter-title">Design Style</h4>
+                        <div class="filter-options">
+                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="modern"> Modern Minimalist</label>
+                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="luxury"> Luxury Villa</label>
+                            <label class="filter-cb"><input type="checkbox" name="style_filter" value="kerala"> Traditional Kerala</label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Product Grid Area -->
+                <main class="catalog-main">
+                    <div class="catalog-top-bar flex-between mb-3">
+                        <span class="results-count" id="results-count">Showing 6 Premium Products</span>
+                        <div class="sort-wrapper">
+                            <label for="sort-select">Sort By: </label>
+                            <select id="sort-select" class="form-control-sm">
+                                <option value="popular">Best Sellers</option>
+                                <option value="price_low">Price: Low to High</option>
+                                <option value="price_high">Price: High to Low</option>
+                                <option value="newest">New Arrivals</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                        <!-- Product 1: Modular Kitchen -->
+                        <div class="product-card" data-cat="kitchen" data-mat="bwp" data-type="custom" data-style="modern" data-price="225000">
+                            <div class="product-img-box">
+                                <span class="prod-badge bg-gold">Best Seller</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="assets/images/after_kitchen.png" alt="Acrylic Modular Kitchen">
+                                <button class="btn-quick-view" data-id="prod1">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Modular Kitchen</span>
+                                <h4>L-Shape Anti-Scratch Acrylic Modular Kitchen</h4>
+                                <p class="prod-desc">BWP 710 Marine Ply base with high gloss acrylic finish & soft-close Hettich tandem boxes.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-tree"></i> BWP Marine Ply</span>
+                                    <span><i class="fa-solid fa-shield-halved"></i> 10-Yr Warranty</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Starting From</span>
+                                        <span class="price-val">₹ 2,25,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20L-Shape%20Acrylic%20Modular%20Kitchen" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 2: Bedroom Set -->
+                        <div class="product-card" data-cat="bedroom" data-mat="teak" data-type="ready" data-style="luxury" data-price="145000">
+                            <div class="product-img-box">
+                                <span class="prod-badge">Complete Set</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="assets/images/after_living.png" alt="Luxury King Bedroom Set">
+                                <button class="btn-quick-view" data-id="prod2">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Bedroom Set</span>
+                                <h4>Royal Teak King Hydraulic Bedroom Set</h4>
+                                <p class="prod-desc">Includes King Hydraulic Storage Bed, 3-Door Sliding Glass Wardrobe, LED Vanity Mirror & Bedside Tables.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-bed"></i> King Hydraulic</span>
+                                    <span><i class="fa-solid fa-shirt"></i> Sliding Closet</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Package Price</span>
+                                        <span class="price-val">₹ 1,45,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Royal%20Teak%20King%20Hydraulic%20Bedroom%20Set" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 3: TV Entertainment Unit -->
+                        <div class="product-card" data-cat="tv_unit" data-mat="hdhmr" data-type="custom" data-style="modern" data-price="85000">
+                            <div class="product-img-box">
+                                <span class="prod-badge bg-gold">New Arrival</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Entertainment Wall TV Unit">
+                                <button class="btn-quick-view" data-id="prod3">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">TV Units</span>
+                                <h4>Entertainment Wall Unit with Teak Fluted Panels</h4>
+                                <p class="prod-desc">Floating TV console with integrated warm LED strip cove lighting and ambient louver paneling.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-tv"></i> Fit up to 85"</span>
+                                    <span><i class="fa-solid fa-lightbulb"></i> LED Strips</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Custom Build</span>
+                                        <span class="price-val">₹ 85,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Entertainment%20Wall%20TV%20Unit" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 4: Wardrobe -->
+                        <div class="product-card" data-cat="wardrobe" data-mat="glass" data-type="custom" data-style="luxury" data-price="115000">
+                            <div class="product-img-box">
+                                <span class="prod-badge">Trending</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=600&q=80" alt="Glass Sliding Wardrobe">
+                                <button class="btn-quick-view" data-id="prod4">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Wardrobes</span>
+                                <h4>Lacquered Tinted Glass Sliding Wardrobe</h4>
+                                <p class="prod-desc">Floor-to-ceiling glass sliding doors with automated interior motion sensor LED lights.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-door-open"></i> Glass Sliding</span>
+                                    <span><i class="fa-solid fa-lightbulb"></i> Auto Sensor</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Custom Size</span>
+                                        <span class="price-val">₹ 1,15,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Tinted%20Glass%20Sliding%20Wardrobe" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 5: Living Room Sofa -->
+                        <div class="product-card" data-cat="living" data-mat="teak" data-type="ready" data-style="modern" data-price="68000">
+                            <div class="product-img-box">
+                                <span class="prod-badge bg-gold">Best Seller</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="L-Shape Sofa Set">
+                                <button class="btn-quick-view" data-id="prod5">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Living Room</span>
+                                <h4>Nordic L-Shape Sectional Fabric Sofa</h4>
+                                <p class="prod-desc">High-density foam seating with stain-resistant velvet fabric and solid teak wood legs.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-couch"></i> 6 Seater L-Shape</span>
+                                    <span><i class="fa-solid fa-shield"></i> 5-Yr Warranty</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Ready Made</span>
+                                        <span class="price-val">₹ 68,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Nordic%20L-Shape%20Sofa" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product 6: Dining Set -->
+                        <div class="product-card" data-cat="dining" data-mat="quartz" data-type="ready" data-style="luxury" data-price="78000">
+                            <div class="product-img-box">
+                                <span class="prod-badge">Popular</span>
+                                <button class="btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+                                <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Marble Dining Set">
+                                <button class="btn-quick-view" data-id="prod6">Quick View</button>
+                            </div>
+                            <div class="product-info">
+                                <span class="prod-cat">Dining Furniture</span>
+                                <h4>Italian Calacatta Marble 6-Seater Dining Set</h4>
+                                <p class="prod-desc">Italian quartz marble tabletop with solid teak wood frame and ergonomic cushioned chairs.</p>
+                                <div class="prod-specs">
+                                    <span><i class="fa-solid fa-utensils"></i> 6 Seater</span>
+                                    <span><i class="fa-solid fa-gem"></i> Marble Top</span>
+                                </div>
+                                <div class="prod-footer flex-between mt-3">
+                                    <div class="price-box">
+                                        <span class="price-label">Package Price</span>
+                                        <span class="price-val">₹ 78,000</span>
+                                    </div>
+                                    <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Italian%20Marble%20Dining%20Set" target="_blank" class="btn btn-primary btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Furniture Design CTA -->
+    <section class="custom-cta-section section-padding bg-dark text-white text-center">
+        <div class="container">
+            <span class="badge badge-hero"><i class="fa-solid fa-pen-ruler text-gold"></i> Tailor-Made Craftsmanship</span>
+            <h2 class="section-title text-white">Didn't Find What You're Looking For?</h2>
+            <p class="section-description text-light">Get a 100% custom-built furniture design crafted in our Kollam factory with exact dimensions, materials, and colors.</p>
+            <div class="cta-buttons mt-4">
+                <a href="index.html#estimator" class="btn btn-primary btn-lg"><i class="fa-solid fa-wand-magic-sparkles"></i> Design My Furniture & Get Quote</a>
+                <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20want%20to%20request%20a%20custom%20furniture%20design" target="_blank" class="btn btn-whatsapp btn-lg"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us directly</a>
+                <a href="index.html#contact" class="btn btn-outline btn-lg"><i class="fa-solid fa-calendar-days"></i> Schedule Site Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.jpg" alt="JK INTERIO Logo" class="footer-logo-img">
+                        <div>
+                            <h4 class="brand-title">JK INTERIO</h4>
+                            <span class="brand-tagline">Steel & Wood Legacy</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc mt-3">
+                        Kollam’s premier interior design firm and custom furniture manufacturer. Built on 23+ years of engineering craftsmanship from JK Steel & Wood Industries.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="products.html">Products Catalog</a></li>
+                        <li><a href="index.html#visualizer">3D Visualizer</a></li>
+                        <li><a href="index.html#estimator">Cost Estimator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Product Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="products.html?cat=kitchen">Modular Kitchens</a></li>
+                        <li><a href="products.html?cat=bedroom">Bedroom Sets</a></li>
+                        <li><a href="products.html?cat=tv_unit">TV Units</a></li>
+                        <li><a href="products.html?cat=wardrobe">Sliding Wardrobes</a></li>
+                        <li><a href="products.html?cat=living">Sofas & Living Room</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-title">Contact Information</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot text-gold"></i>
+                            <span><a href="https://www.google.com/maps/place/JK+Interio/@8.9314688,76.6360294,19z/data=!4m6!3m5!1s0x3b05e34400dd8e37:0x53a797e6b0e69754!8m2!3d8.9316887!4d76.635861!16s%2Fg%2F11j352w01v?entry=ttu&g_ep=EgoyMDI2MDgwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="color: inherit; text-decoration: underline;">JK INTERIO, JK Building, JK Junction, Chandanathope, Kollam - 691014, Kerala</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone text-gold"></i>
+                            <span><a href="tel:+919605620113" class="text-white">+91 96056 20113</a> / +91 99610 00113</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope text-gold"></i>
+                            <span><a href="mailto:infojkinterio@gmail.com" class="text-white">infojkinterio@gmail.com</a></span>
+                        </li>
+                    </ul>
+                    <div class="social-links mt-3">
+                        <a href="https://www.instagram.com/jkinterio2.0?igsh=MTUzcTczbXhhd2ZnYg==" target="_blank" aria-label="Instagram (@jkinterio2.0)"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@jkjunction1505" target="_blank" aria-label="YouTube Channel (@jkjunction1505)"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://wa.me/919605620113" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center mt-5 pt-3">
+                <p>&copy; 2026 JK INTERIO. All Rights Reserved. Designed for Luxury Kerala Living.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Modal -->
+    <div class="modal-overlay" id="quick-view-modal" style="display:none;">
+        <div class="modal-card">
+            <button class="modal-close" id="quick-view-close">&times;</button>
+            <div class="grid grid-2" id="quick-view-body">
+                <div class="qv-img-box">
+                    <img id="qv-img" src="assets/images/after_kitchen.png" alt="Product Image">
+                </div>
+                <div class="qv-details">
+                    <span class="badge badge-hero" id="qv-cat">Modular Kitchen</span>
+                    <h3 id="qv-title">L-Shape Anti-Scratch Acrylic Modular Kitchen</h3>
+                    <p id="qv-desc">Full factory precision CNC edge banding with marine grade plywood.</p>
+                    <div class="qv-price-box mt-3 mb-3">
+                        <span class="price-label">Price Estimate</span>
+                        <h2 id="qv-price">₹ 2,25,000</h2>
+                    </div>
+                    <ul class="qv-features-list mb-4">
+                        <li><i class="fa-solid fa-check text-gold"></i> 10-Year Water & Termite Anti-Swelling Guarantee</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Soft-Close Motion German Hettich Fittings</li>
+                        <li><i class="fa-solid fa-check text-gold"></i> Easy EMI Available (Zero Downpayment options)</li>
+                    </ul>
+                    <div class="qv-actions flex-between">
+                        <a href="https://wa.me/919605620113" target="_blank" id="qv-whatsapp-link" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Inquiry via WhatsApp</a>
+                        <a href="index.html#estimator" class="btn btn-primary"><i class="fa-solid fa-calculator"></i> Calculate Custom BOQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-wrapper" id="fab-wrapper">
+        <button class="fab-btn fab-top" id="scroll-top-btn" aria-label="Scroll to top"><i class="fa-solid fa-chevron-up"></i></button>
+        <a href="tel:+919605620113" class="fab-btn fab-call" aria-label="Call Helpline"><i class="fa-solid fa-phone"></i></a>
+        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20browsing%20your%20products%20catalog%20and%20need%20assistance." target="_blank" class="fab-btn fab-wa" aria-label="WhatsApp Chat"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Sticky Bottom App Navigation Bar for Mobile -->
+    <div class="sticky-bottom-bar">
+        <a href="index.html#home" class="sticky-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+        <a href="products.html" class="sticky-item active"><i class="fa-solid fa-couch"></i><span>Products</span></a>
+        <a href="index.html#gallery" class="sticky-item"><i class="fa-solid fa-images"></i><span>Gallery</span></a>
+        <a href="index.html#estimator" class="sticky-item sticky-quote"><i class="fa-solid fa-calculator"></i><span>Quote</span></a>
+        <a href="index.html#contact" class="sticky-item sticky-wa"><i class="fa-brands fa-whatsapp"></i><span>Contact</span></a>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
