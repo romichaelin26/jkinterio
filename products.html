@@ -78,45 +78,47 @@
             <h1 class="section-title text-white">Exclusive Interior & Furniture Catalog</h1>
             <p class="section-description text-light">Explore custom-built modular interiors and ready-made furniture designed for modern Kerala homes.</p>
 
-            <!-- Search Input Box -->
+            <!-- Clean Search Input Box -->
             <div class="catalog-search-wrapper mt-4">
                 <div class="search-input-group">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     <input type="text" id="catalog-search-input" class="search-input" placeholder="Search modular kitchens, bedroom sets, TV units, sofas, dining tables...">
-                    <button class="btn btn-primary" id="catalog-search-btn">Search Catalog</button>
+                    <button class="btn btn-pill btn-forest" id="catalog-search-btn">Search</button>
                 </div>
             </div>
 
-            <!-- Quick Filter Pills -->
-            <div class="category-pills-bar mt-4">
-                <button class="pill-btn active" data-cat="all">All Products</button>
-                <button class="pill-btn" data-cat="kitchen">Modular Kitchens</button>
-                <button class="pill-btn" data-cat="bedroom">Bedroom Sets</button>
-                <button class="pill-btn" data-cat="tv_unit">TV Units</button>
-                <button class="pill-btn" data-cat="wardrobe">Wardrobes</button>
-                <button class="pill-btn" data-cat="living">Living Room</button>
-                <button class="pill-btn" data-cat="dining">Dining Furniture</button>
-                <button class="pill-btn" data-cat="office">Office Furniture</button>
-                <button class="pill-btn" data-cat="storage">Storage Units</button>
-                <button class="pill-btn" data-cat="custom">Custom Furniture</button>
+            <!-- Icon-Based Category Selector (Swipeable on Mobile) -->
+            <div class="cat-icon-scroll-wrapper mt-4">
+                <div class="cat-icon-grid">
+                    <div class="cat-icon-card active" data-cat="all"><i class="fa-solid fa-grid-2"></i> <span>All Collections</span></div>
+                    <div class="cat-icon-card" data-cat="kitchen"><i class="fa-solid fa-utensils"></i> <span>Modular Kitchens</span></div>
+                    <div class="cat-icon-card" data-cat="bedroom"><i class="fa-solid fa-bed"></i> <span>Bedroom Sets</span></div>
+                    <div class="cat-icon-card" data-cat="tv_unit"><i class="fa-solid fa-tv"></i> <span>TV Units</span></div>
+                    <div class="cat-icon-card" data-cat="wardrobe"><i class="fa-solid fa-door-closed"></i> <span>Wardrobes</span></div>
+                    <div class="cat-icon-card" data-cat="living"><i class="fa-solid fa-couch"></i> <span>Living Room</span></div>
+                    <div class="cat-icon-card" data-cat="dining"><i class="fa-solid fa-wine-glass"></i> <span>Dining</span></div>
+                    <div class="cat-icon-card" data-cat="office"><i class="fa-solid fa-briefcase"></i> <span>Office Furniture</span></div>
+                    <div class="cat-icon-card" data-cat="storage"><i class="fa-solid fa-boxes-stacked"></i> <span>Storage</span></div>
+                    <div class="cat-icon-card" data-cat="custom"><i class="fa-solid fa-hammer"></i> <span>Custom Furniture</span></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Mobile Filter & Sort Bar -->
     <div class="mobile-filter-bar">
-        <button class="btn btn-outline btn-sm" id="open-filter-sheet-btn"><i class="fa-solid fa-sliders"></i> Filter & Sort</button>
+        <button class="btn btn-pill-outline btn-sm" id="open-filter-sheet-btn"><i class="fa-solid fa-sliders"></i> Filter & Sort</button>
         <span class="results-count" id="mobile-results-count">Showing 9 Premium Products</span>
     </div>
 
-    <!-- Main Product Catalog Grid & Filter Sidebar Section -->
-    <section class="product-catalog-section section-padding">
+    <!-- Main Product Catalog Grid Section -->
+    <section class="product-catalog-section section-padding bg-fafafa">
         <div class="container">
             <div class="catalog-layout">
                 <!-- Sidebar Filters (Desktop) -->
                 <aside class="filter-sidebar">
                     <div class="filter-header">
-                        <h3><i class="fa-solid fa-filter text-gold"></i> Refine Products</h3>
+                        <h3><i class="fa-solid fa-sliders text-gold"></i> Refine Selection</h3>
                         <button class="btn-text-reset" id="reset-filters-btn">Reset All</button>
                     </div>
 
@@ -130,8 +132,6 @@
                             <label class="filter-cb"><input type="checkbox" name="cat_filter" value="wardrobe"> Custom & Sliding Wardrobes</label>
                             <label class="filter-cb"><input type="checkbox" name="cat_filter" value="living"> Living Room & Sofas</label>
                             <label class="filter-cb"><input type="checkbox" name="cat_filter" value="dining"> Dining Sets & Crockery</label>
-                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="office"> Office & Executive Desks</label>
-                            <label class="filter-cb"><input type="checkbox" name="cat_filter" value="storage"> Storage & Shoe Racks</label>
                         </div>
                     </div>
 
@@ -159,7 +159,7 @@
 
                 <!-- Product Grid Area -->
                 <main class="catalog-main">
-                    <div class="catalog-top-bar flex-between mb-3 hide-mobile">
+                    <div class="catalog-top-bar flex-between mb-4 hide-mobile">
                         <span class="results-count" id="results-count">Showing 9 Premium Products</span>
                         <div class="sort-wrapper">
                             <label for="sort-select">Sort By: </label>
@@ -188,7 +188,6 @@
                                 <div>
                                     <span class="prod-cat">Modular Kitchen</span>
                                     <h4 class="prod-title">L-Shape Anti-Scratch Acrylic Modular Kitchen</h4>
-                                    <p class="prod-desc-clamp">BWP 710 Marine Ply base cabinet structure with anti-fingerprint acrylic shutter finish and soft-close Hettich tandem drawers.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">BWP Marine Ply</span>
                                         <span class="prod-tag">German Hardware</span>
@@ -200,8 +199,8 @@
                                         <span class="price-val">₹ 2,25,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod1">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20L-Shape%20Acrylic%20Modular%20Kitchen" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod1">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20L-Shape%20Acrylic%20Modular%20Kitchen" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -221,7 +220,6 @@
                                 <div>
                                     <span class="prod-cat">Bedroom Set</span>
                                     <h4 class="prod-title">Royal Teak King Hydraulic Bedroom Package</h4>
-                                    <p class="prod-desc-clamp">Includes King Hydraulic Storage Bed, 3-Door Sliding Glass Wardrobe, LED Vanity Mirror, and Bedside Tables.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Solid Teak Wood</span>
                                         <span class="prod-tag">Hydraulic Storage</span>
@@ -233,8 +231,8 @@
                                         <span class="price-val">₹ 1,45,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod2">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Royal%20Teak%20Bedroom%20Package" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod2">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Royal%20Teak%20Bedroom%20Package" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -254,7 +252,6 @@
                                 <div>
                                     <span class="prod-cat">TV Units</span>
                                     <h4 class="prod-title">Entertainment Wall Unit with Teak Fluted Panels</h4>
-                                    <p class="prod-desc-clamp">Floating TV console with integrated warm LED strip cove lighting and ambient louver wall paneling.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Fluted Panel</span>
                                         <span class="prod-tag">Warm LED Cove</span>
@@ -266,8 +263,8 @@
                                         <span class="price-val">₹ 85,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod3">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Entertainment%20TV%20Unit" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod3">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Entertainment%20TV%20Unit" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +284,6 @@
                                 <div>
                                     <span class="prod-cat">Wardrobes</span>
                                     <h4 class="prod-title">Lacquered Tinted Glass Sliding Wardrobe</h4>
-                                    <p class="prod-desc-clamp">Floor-to-ceiling glass sliding doors with heavy-duty aluminum track and motion-sensor interior lights.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Tinted Glass</span>
                                         <span class="prod-tag">Motion Sensor</span>
@@ -299,8 +295,8 @@
                                         <span class="price-val">₹ 1,15,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod4">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Tinted%20Glass%20Wardrobe" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod4">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Tinted%20Glass%20Wardrobe" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +316,6 @@
                                 <div>
                                     <span class="prod-cat">Living Room</span>
                                     <h4 class="prod-title">Nordic L-Shape Sectional Fabric Sofa</h4>
-                                    <p class="prod-desc-clamp">High-density HR foam seating cushions with stain-resistant velvet upholstery and solid teak legs.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">6-Seater L-Shape</span>
                                         <span class="prod-tag">Velvet Fabric</span>
@@ -332,8 +327,8 @@
                                         <span class="price-val">₹ 68,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod5">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Nordic%20L-Shape%20Sofa" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod5">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Nordic%20L-Shape%20Sofa" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +348,6 @@
                                 <div>
                                     <span class="prod-cat">Dining Furniture</span>
                                     <h4 class="prod-title">Italian Calacatta Marble 6-Seater Dining Set</h4>
-                                    <p class="prod-desc-clamp">Italian quartz marble tabletop with solid teak wood frame and 6 ergonomic cushioned chairs.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Calacatta Quartz</span>
                                         <span class="prod-tag">6 Chairs Included</span>
@@ -365,8 +359,8 @@
                                         <span class="price-val">₹ 78,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod6">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Italian%20Marble%20Dining%20Set" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod6">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Italian%20Marble%20Dining%20Set" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -386,7 +380,6 @@
                                 <div>
                                     <span class="prod-cat">Office Furniture</span>
                                     <h4 class="prod-title">Executive Manager Desk & Ergonomic Chair</h4>
-                                    <p class="prod-desc-clamp">Spacious executive desk with side lockable drawer unit, wire pass-through, and mesh chair.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Lockable Storage</span>
                                         <span class="prod-tag">Lumbar Mesh</span>
@@ -398,8 +391,8 @@
                                         <span class="price-val">₹ 42,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod7">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Executive%20Office%20Desk" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod7">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Executive%20Office%20Desk" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -419,7 +412,6 @@
                                 <div>
                                     <span class="prod-cat">Storage Furniture</span>
                                     <h4 class="prod-title">Cushioned Entryway Shoe Storage Bench</h4>
-                                    <p class="prod-desc-clamp">Multi-tier solid wood shoe cabinet storing 24 pairs with top cushion seating & key drawer.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">24 Pairs Capacity</span>
                                         <span class="prod-tag">Seating Cushion</span>
@@ -431,8 +423,8 @@
                                         <span class="price-val">₹ 28,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod8">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Cushioned%20Shoe%20Rack" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod8">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Cushioned%20Shoe%20Rack" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -452,7 +444,6 @@
                                 <div>
                                     <span class="prod-cat">Custom Furniture</span>
                                     <h4 class="prod-title">Hand-Carved Solid Teak Main Entrance Door</h4>
-                                    <p class="prod-desc-clamp">Traditional hand-carved solid teak wood main door with brass fixtures and PU finish.</p>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Solid Teak Wood</span>
                                         <span class="prod-tag">Hand Carved</span>
@@ -464,8 +455,8 @@
                                         <span class="price-val">₹ 95,000</span>
                                     </div>
                                     <div class="card-cta-group">
-                                        <button class="btn btn-outline btn-quick-view" data-id="prod9">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Solid%20Teak%20Main%20Door" target="_blank" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
+                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod9">View Details</button>
+                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Solid%20Teak%20Main%20Door" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
                                     </div>
                                 </div>
                             </div>
@@ -474,7 +465,7 @@
 
                     <!-- Load More Products CTA -->
                     <div class="text-center mt-5">
-                        <button class="btn btn-outline btn-lg" id="load-more-btn"><i class="fa-solid fa-rotate-right"></i> Load More Products</button>
+                        <button class="btn btn-pill-outline btn-lg" id="load-more-btn"><i class="fa-solid fa-rotate-right"></i> Load More Products</button>
                     </div>
                 </main>
             </div>

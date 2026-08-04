@@ -28,7 +28,10 @@
     --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 
-    /* Color Tokens */
+    /* Color Tokens - Minimal Luxury Theme */
+    --forest-green: #2F855A;
+    --forest-hover: #276749;
+    --bg-fafafa: #FAFAFA;
     --text-main: #1F2937;
     --text-muted: #6B7280;
     --olive-accent: #2F855A;
@@ -2438,12 +2441,106 @@ html, body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-@media (max-width: 768px) {
-    .mobile-filter-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+/* Icon-Based Category Selector Cards */
+.cat-icon-scroll-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
 }
+
+.cat-icon-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-icon-grid {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: nowrap;
+}
+
+.cat-icon-card {
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    padding: 0.9rem 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.cat-icon-card i {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    transition: color 0.25s ease;
+}
+
+.cat-icon-card.active, .cat-icon-card:hover {
+    border-color: var(--forest-green);
+    background: #F0FDF4;
+    color: var(--forest-green);
+}
+
+.cat-icon-card.active i, .cat-icon-card:hover i {
+    color: var(--forest-green);
+}
+
+/* Minimalist Pill Buttons */
+.btn-pill {
+    border-radius: 30px !important;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 0.6rem 1.4rem;
+}
+
+.btn-charcoal {
+    background-color: #1F2937;
+    color: #ffffff !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-charcoal:hover {
+    background-color: var(--forest-green);
+    box-shadow: 0 6px 15px rgba(47, 133, 90, 0.25);
+}
+
+.btn-forest {
+    background-color: var(--forest-green);
+    color: #ffffff !important;
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-forest:hover {
+    background-color: var(--forest-hover);
+    box-shadow: 0 6px 15px rgba(39, 103, 73, 0.3);
+}
+
+.btn-pill-outline {
+    background: transparent;
+    border: 1px solid #D1D5DB;
+    color: #1F2937;
+    border-radius: 30px !important;
+    transition: var(--transition-smooth);
+}
+
+.btn-pill-outline:hover {
+    border-color: var(--forest-green);
+    color: var(--forest-green);
+    background: #F0FDF4;
+}
+
+.bg-fafafa {
+    background-color: #FAFAFA !important;
+}
+
 
 

@@ -674,14 +674,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // 13. Product Catalog Filter, Search & Quick View Modal Engine
     const catalogSearchInput = document.getElementById('catalog-search-input');
     const catalogSearchBtn = document.getElementById('catalog-search-btn');
-    const categoryPills = document.querySelectorAll('.pill-btn');
+    const categoryPills = document.querySelectorAll('.pill-btn, .cat-icon-card');
     const productCards = document.querySelectorAll('.product-card');
     const resultsCount = document.getElementById('results-count');
+    const mobileResultsCount = document.getElementById('mobile-results-count');
     const resetFiltersBtn = document.getElementById('reset-filters-btn');
 
     function filterProducts() {
         const query = catalogSearchInput ? catalogSearchInput.value.toLowerCase().trim() : '';
-        const activePill = document.querySelector('.pill-btn.active');
+        const activePill = document.querySelector('.pill-btn.active, .cat-icon-card.active');
         const selectedPillCat = activePill ? activePill.getAttribute('data-cat') : 'all';
 
         const checkedCats = Array.from(document.querySelectorAll('input[name="cat_filter"]:checked')).map(cb => cb.value);
