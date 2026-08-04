@@ -55,16 +55,15 @@
         </div>
     </header>
 
-    <!-- Main Content Section: 1. Products Title -> 2. Search -> 3. Category Chips -->
+    <!-- Hero Section (Compact <= 250px) -->
     <section class="products-page-padding bg-fafafa" style="padding-bottom: 1.5rem;">
         <div class="container">
-            <!-- 1. Products Title & Subtitle -->
             <div class="mb-3">
-                <h1 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: #1F2937; margin: 0; line-height: 1.1;">Products Catalog</h1>
-                <p style="color: #6B7280; margin-top: 0.3rem; font-size: 0.95rem;">Explore custom modular interiors and ready-made furniture collections.</p>
+                <h1 style="font-family: var(--font-heading); font-size: 2.4rem; font-weight: 800; color: #1F2937; margin: 0; line-height: 1.1;">Our Products</h1>
+                <p style="color: #6B7280; margin-top: 0.3rem; font-size: 1rem;">Premium Furniture & Interior Solutions for Every Space</p>
             </div>
 
-            <!-- 2. Search Bar -->
+            <!-- Sticky Search Input Box -->
             <div class="catalog-search-wrapper mt-3">
                 <div class="search-input-group">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -73,8 +72,8 @@
                 </div>
             </div>
 
-            <!-- 3. Category Chips (Swipeable Icon Cards) -->
-            <div class="cat-icon-scroll-wrapper mt-4">
+            <!-- Category Navigation Chips -->
+            <div class="cat-icon-scroll-wrapper mt-3">
                 <div class="cat-icon-grid">
                     <div class="cat-icon-card active" data-cat="all"><i class="fa-solid fa-grid-2"></i> <span>All Collections</span></div>
                     <div class="cat-icon-card" data-cat="kitchen"><i class="fa-solid fa-utensils"></i> <span>Modular Kitchens</span></div>
@@ -85,8 +84,105 @@
                     <div class="cat-icon-card" data-cat="dining"><i class="fa-solid fa-wine-glass"></i> <span>Dining</span></div>
                     <div class="cat-icon-card" data-cat="office"><i class="fa-solid fa-briefcase"></i> <span>Office Furniture</span></div>
                     <div class="cat-icon-card" data-cat="storage"><i class="fa-solid fa-boxes-stacked"></i> <span>Storage</span></div>
+                    <div class="cat-icon-card" data-cat="kids"><i class="fa-solid fa-child"></i> <span>Kids Furniture</span></div>
                     <div class="cat-icon-card" data-cat="custom"><i class="fa-solid fa-hammer"></i> <span>Custom Furniture</span></div>
+                    <div class="cat-icon-card" data-cat="commercial"><i class="fa-solid fa-building"></i> <span>Commercial</span></div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories Showcase Grid (4 Cols Desktop, 2 Tablet, 1 Mobile) -->
+    <section class="section-padding bg-white border-bottom">
+        <div class="container">
+            <div class="mb-4">
+                <h2 style="font-family: var(--font-heading); font-size: 1.8rem; font-weight: 800; color: #1F2937;">Explore Featured Categories</h2>
+                <p style="color: #6B7280;">Browse factory-crafted custom interiors and ready-to-ship furniture packages.</p>
+            </div>
+
+            <div class="showroom-cat-grid">
+                <!-- 1. Modular Kitchens -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="kitchen">
+                    <img src="assets/images/after_kitchen.png" alt="Modular Kitchens" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <span class="badge bg-gold mb-2">Popular</span>
+                        <h3 class="showroom-cat-title">🏡 Modular Kitchens</h3>
+                        <p class="showroom-cat-desc">Acrylic, PU Finish & BWP Marine Plywood Kitchen Systems.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 2. Bedroom Sets -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="bedroom">
+                    <img src="assets/images/after_living.png" alt="Bedroom Sets" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <span class="badge bg-gold mb-2">Complete Set</span>
+                        <h3 class="showroom-cat-title">🛏 Bedroom Sets</h3>
+                        <p class="showroom-cat-desc">King Hydraulic Storage Beds, Wardrobes & Vanity Sets.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 3. TV Units -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="tv_unit">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="TV Units" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <span class="badge bg-gold mb-2">Trending</span>
+                        <h3 class="showroom-cat-title">📺 TV Units</h3>
+                        <p class="showroom-cat-desc">Floating Consoles, Fluted Wall Panels & LED Cove Units.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 4. Wardrobes -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="wardrobe">
+                    <img src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=600&q=80" alt="Wardrobes" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <h3 class="showroom-cat-title">🚪 Wardrobes</h3>
+                        <p class="showroom-cat-desc">Floor-to-Ceiling Tinted Glass & Lacquered Sliding Doors.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 5. Living Room -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="living">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Living Room Furniture" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <h3 class="showroom-cat-title">🛋 Living Room</h3>
+                        <p class="showroom-cat-desc">L-Shape Velvet Sofas, Recliners & Nesting Coffee Tables.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 6. Dining Furniture -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="dining">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Dining Furniture" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <h3 class="showroom-cat-title">🍽 Dining Furniture</h3>
+                        <p class="showroom-cat-desc">Italian Calacatta Quartz Tables & 6-Seater Solid Wood Sets.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 7. Office Furniture -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="office">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Office Furniture" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <h3 class="showroom-cat-title">💼 Office Furniture</h3>
+                        <p class="showroom-cat-desc">Executive Desks, Lumbar Chairs & Lockable File Cabinets.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- 8. Storage Solutions -->
+                <a href="#products-catalog" class="showroom-cat-card" data-cat="storage">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Storage Solutions" loading="lazy">
+                    <div class="showroom-cat-content">
+                        <h3 class="showroom-cat-title">📚 Storage Solutions</h3>
+                        <p class="showroom-cat-desc">Shoe Benches, Display Crockery Units & Book Racks.</p>
+                        <span class="btn btn-pill-outline btn-xs" style="color: #ffffff; border-color: rgba(255,255,255,0.6);">Explore Collection &rarr;</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -98,7 +194,7 @@
     </div>
 
     <!-- Main Product Catalog Grid Section -->
-    <section class="product-catalog-section section-padding bg-fafafa">
+    <section class="product-catalog-section section-padding bg-fafafa" id="products-catalog">
         <div class="container">
             <div class="catalog-layout">
                 <!-- Sidebar Filters (Desktop) -->
@@ -174,6 +270,11 @@
                                 <div>
                                     <span class="prod-cat">Modular Kitchen</span>
                                     <h4 class="prod-title">L-Shape Anti-Scratch Acrylic Modular Kitchen</h4>
+                                    <div class="color-swatch-dots">
+                                        <span class="color-dot" style="background:#ffffff;" title="Pure White"></span>
+                                        <span class="color-dot" style="background:#A37B45;" title="Teak Accent"></span>
+                                        <span class="color-dot" style="background:#374151;" title="Charcoal Grey"></span>
+                                    </div>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">BWP Marine Ply</span>
                                         <span class="prod-tag">German Hardware</span>
@@ -206,6 +307,10 @@
                                 <div>
                                     <span class="prod-cat">Bedroom Set</span>
                                     <h4 class="prod-title">Royal Teak King Hydraulic Bedroom Package</h4>
+                                    <div class="color-swatch-dots">
+                                        <span class="color-dot" style="background:#A37B45;" title="Natural Teak"></span>
+                                        <span class="color-dot" style="background:#523C27;" title="Walnut Dark"></span>
+                                    </div>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Solid Teak Wood</span>
                                         <span class="prod-tag">Hydraulic Storage</span>
@@ -238,6 +343,10 @@
                                 <div>
                                     <span class="prod-cat">TV Units</span>
                                     <h4 class="prod-title">Entertainment Wall Unit with Teak Fluted Panels</h4>
+                                    <div class="color-swatch-dots">
+                                        <span class="color-dot" style="background:#A37B45;" title="Teak Louver"></span>
+                                        <span class="color-dot" style="background:#1E2229;" title="Matte Black"></span>
+                                    </div>
                                     <div class="prod-tags-flex">
                                         <span class="prod-tag">Fluted Panel</span>
                                         <span class="prod-tag">Warm LED Cove</span>
@@ -255,198 +364,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Product 4: Wardrobe -->
-                        <div class="product-card" data-cat="wardrobe" data-mat="glass" data-type="custom" data-price="115000">
-                            <div class="product-img-box">
-                                <span class="prod-badge">Trending</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=600&q=80" alt="Glass Sliding Wardrobe" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Wardrobes</span>
-                                    <h4 class="prod-title">Lacquered Tinted Glass Sliding Wardrobe</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">Tinted Glass</span>
-                                        <span class="prod-tag">Motion Sensor</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Custom Size</span>
-                                        <span class="price-val">₹ 1,15,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod4">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Tinted%20Glass%20Wardrobe" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 5: Living Room Sofa -->
-                        <div class="product-card" data-cat="living" data-mat="teak" data-type="ready" data-price="68000">
-                            <div class="product-img-box">
-                                <span class="prod-badge bg-gold">Best Seller</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="L-Shape Sofa Set" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Living Room</span>
-                                    <h4 class="prod-title">Nordic L-Shape Sectional Fabric Sofa</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">6-Seater L-Shape</span>
-                                        <span class="prod-tag">Velvet Fabric</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Ready Made</span>
-                                        <span class="price-val">₹ 68,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod5">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Nordic%20L-Shape%20Sofa" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 6: Dining Set -->
-                        <div class="product-card" data-cat="dining" data-mat="quartz" data-type="ready" data-price="78000">
-                            <div class="product-img-box">
-                                <span class="prod-badge">Popular</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Marble Dining Set" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Dining Furniture</span>
-                                    <h4 class="prod-title">Italian Calacatta Marble 6-Seater Dining Set</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">Calacatta Quartz</span>
-                                        <span class="prod-tag">6 Chairs Included</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Package Price</span>
-                                        <span class="price-val">₹ 78,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod6">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Italian%20Marble%20Dining%20Set" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 7: Office Desk -->
-                        <div class="product-card" data-cat="office" data-mat="bwp" data-type="ready" data-price="42000">
-                            <div class="product-img-box">
-                                <span class="prod-badge bg-gold">Executive</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80" alt="Executive Office Desk" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Office Furniture</span>
-                                    <h4 class="prod-title">Executive Manager Desk & Ergonomic Chair</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">Lockable Storage</span>
-                                        <span class="prod-tag">Lumbar Mesh</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Package Price</span>
-                                        <span class="price-val">₹ 42,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod7">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Executive%20Office%20Desk" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 8: Storage Bench -->
-                        <div class="product-card" data-cat="storage" data-mat="teak" data-type="ready" data-price="28000">
-                            <div class="product-img-box">
-                                <span class="prod-badge">Space Saver</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=600&q=80" alt="Shoe Storage Cabinet" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Storage Furniture</span>
-                                    <h4 class="prod-title">Cushioned Entryway Shoe Storage Bench</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">24 Pairs Capacity</span>
-                                        <span class="prod-tag">Seating Cushion</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Ready Made</span>
-                                        <span class="price-val">₹ 28,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod8">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Cushioned%20Shoe%20Rack" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Product 9: Custom Main Door -->
-                        <div class="product-card" data-cat="custom" data-mat="teak" data-type="custom" data-price="95000">
-                            <div class="product-img-box">
-                                <span class="prod-badge bg-gold">Heritage Wood</span>
-                                <div class="card-actions-top">
-                                    <button class="btn-circle-action btn-wishlist" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
-                                    <button class="btn-circle-action btn-share" aria-label="Share product"><i class="fa-solid fa-share-nodes"></i></button>
-                                </div>
-                                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Carved Teak Door" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <div>
-                                    <span class="prod-cat">Custom Furniture</span>
-                                    <h4 class="prod-title">Hand-Carved Solid Teak Main Entrance Door</h4>
-                                    <div class="prod-tags-flex">
-                                        <span class="prod-tag">Solid Teak Wood</span>
-                                        <span class="prod-tag">Hand Carved</span>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="price-box">
-                                        <span class="price-label">Custom Size</span>
-                                        <span class="price-val">₹ 95,000</span>
-                                    </div>
-                                    <div class="card-cta-group">
-                                        <button class="btn btn-pill-outline btn-quick-view" data-id="prod9">View Details</button>
-                                        <a href="https://wa.me/919605620113?text=Hi%20JK%20Interio%2C%20I%20am%20interested%20in%20Solid%20Teak%20Main%20Door" target="_blank" class="btn btn-pill btn-charcoal"><i class="fa-brands fa-whatsapp"></i> Get Quote</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Load More Products CTA -->
@@ -454,6 +371,44 @@
                         <button class="btn btn-pill-outline btn-lg" id="load-more-btn"><i class="fa-solid fa-rotate-right"></i> Load More Products</button>
                     </div>
                 </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Gallery (Pinterest-Style Masonry Grid) -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <span class="badge bg-gold mb-2"><i class="fa-solid fa-images"></i> Design Inspiration</span>
+                <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: #1F2937;">Pinterest-Style Showcase</h2>
+                <p style="color: #6B7280;">Real interior design projects executed across Kerala homes.</p>
+            </div>
+
+            <div class="inspiration-masonry">
+                <div class="masonry-item">
+                    <img src="assets/images/after_kitchen.png" alt="Acrylic Kitchen Design" loading="lazy">
+                    <div class="masonry-caption">Acrylic Modular Kitchen with Breakfast Counter</div>
+                </div>
+                <div class="masonry-item">
+                    <img src="assets/images/after_living.png" alt="Living Room Concept" loading="lazy">
+                    <div class="masonry-caption">Modern Living Room & Fluted TV Wall</div>
+                </div>
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=600&q=80" alt="Tinted Glass Wardrobe" loading="lazy">
+                    <div class="masonry-caption">Floor-to-Ceiling Tinted Glass Sliding Wardrobe</div>
+                </div>
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=600&q=80" alt="Marble Dining Room" loading="lazy">
+                    <div class="masonry-caption">Calacatta Quartz Dining Table & Custom Chairs</div>
+                </div>
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Sectional Sofa" loading="lazy">
+                    <div class="masonry-caption">Nordic Sectional Velvet Sofa Setup</div>
+                </div>
+                <div class="masonry-item">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80" alt="Solid Teak Main Door" loading="lazy">
+                    <div class="masonry-caption">Hand-Carved Solid Teak Entrance Door</div>
+                </div>
             </div>
         </div>
     </section>
