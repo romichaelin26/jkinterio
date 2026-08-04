@@ -886,12 +886,90 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollY = currentScrollY;
     });
 
-    if (scrollTopBtn) {
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+    // 16. Mobile Bottom-Sheet Filter Drawer Engine
+    const openFilterSheetBtn = document.getElementById('open-filter-sheet-btn');
+    const closeFilterSheetBtn = document.getElementById('close-filter-sheet-btn');
+    const applyFiltersBtn = document.getElementById('apply-filters-btn');
+    const filterBottomSheet = document.getElementById('filter-bottom-sheet');
+
+    if (openFilterSheetBtn && filterBottomSheet) {
+        openFilterSheetBtn.addEventListener('click', () => {
+            filterBottomSheet.classList.add('active');
+        });
+    }
+
+    if (closeFilterSheetBtn && filterBottomSheet) {
+        closeFilterSheetBtn.addEventListener('click', () => {
+            filterBottomSheet.classList.remove('active');
+        });
+    }
+
+    if (applyFiltersBtn && filterBottomSheet) {
+        applyFiltersBtn.addEventListener('click', () => {
+            filterBottomSheet.classList.remove('active');
+            filterProducts();
+        });
+    }
+
+    // 17. Share Button API & Web Share Fallback
+    document.querySelectorAll('.btn-share').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const card = btn.closest('.product-card');
+            const title = card ? card.querySelector('.prod-title').textContent : 'JK INTERIO Product';
+            const url = window.location.href;
+
+            if (navigator.share) {
+                navigator.share({
+                    title: title,
+                    text: `Check out ${title} on JK INTERIO:`,
+                    url: url
+                }).catch(() => {});
+            } else {
+                navigator.clipboard.writeText(url).then(() => {
+                    alert(`✅ Product link copied to clipboard: ${title}`);
+                });
+            }
+        });
+    });
+
+    // 18. Sorting Engine (Low to High, High to Low, Popularity)
+    const sortSelects = document.querySelectorAll('#sort-select, #mobile-sort-select');
+    sortSelects.forEach(select => {
+        select.addEventListener('change', () => {
+            const val = select.value;
+            const grid = document.getElementById('products-grid');
+            if (!grid) return;
+
+            const cards = Array.from(grid.querySelectorAll('.product-card'));
+            cards.sort((a, b) => {
+                const priceA = parseInt(a.getAttribute('data-price') || 0);
+                const priceB = parseInt(b.getAttribute('data-price') || 0);
+
+                if (val === 'price_low') return priceA - priceB;
+                if (val === 'price_high') return priceB - priceA;
+                return 0; // Default order
+            });
+
+            cards.forEach(card => grid.appendChild(card));
+        });
+    });
+
+    // 19. Load More Products Batch Loader
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.disabled = true;
+            loadMoreBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Loading Catalog...';
+
+            setTimeout(() => {
+                loadMoreBtn.style.display = 'none';
+                alert('✅ All 12 ready-made & custom interior packages are currently displayed!');
+            }, 1000);
         });
     }
 
 });
+
 
 
