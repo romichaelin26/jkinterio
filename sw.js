@@ -1,11 +1,10 @@
-const CACHE_NAME = 'jk-interio-v1';
+const CACHE_NAME = 'jk-interio-v2';
 const ASSETS_TO_CACHE = [
   '/',
   'index.html',
   'products.html',
   'assets/css/style.css',
-  'assets/js/script.js',
-  'assets/images/logo.jpg'
+  'assets/js/script.js'
 ];
 
 self.addEventListener('install', (e) => {
