@@ -2019,27 +2019,212 @@ p {
     margin-bottom: 0.5rem;
 }
 
-/* Responsive Rules */
+/* Comprehensive Mobile-First Responsive Rules */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 @media (max-width: 1024px) {
     .catalog-layout { grid-template-columns: 1fr; }
     .filter-sidebar { display: none; }
     .visualizer-container { grid-template-columns: 1fr; }
     .estimator-wrapper { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-container { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
     .nav-menu {
-        position: fixed; top: 70px; left: -100%; width: 100%;
-        background-color: var(--accent-dark); padding: 2rem; transition: var(--transition-smooth);
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--accent-dark);
+        padding: 2rem 1.5rem;
+        transition: var(--transition-smooth);
+        overflow-y: auto;
+        z-index: 999;
     }
-    .nav-menu.active { left: 0; }
-    .nav-list { flex-direction: column; align-items: center; }
-    .mobile-toggle { display: block; }
-    .hero-title { font-size: 2.5rem; }
-    .grid-2, .grid-3, .grid-4, .gallery-grid, .form-grid { grid-template-columns: 1fr; }
-    .hide-mobile { display: none !important; }
-    .sticky-bottom-bar { display: flex; }
-    body { padding-bottom: 60px; }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .hamburger-menu, .mobile-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: #ffffff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .grid-2, .grid-3, .grid-4, .gallery-grid, .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: span 1;
+    }
+
+    .hide-mobile {
+        display: none !important;
+    }
+
+    /* Wizard Progress & Checkbox Grid */
+    .wizard-container {
+        padding: 1.2rem 1rem;
+    }
+
+    .wizard-progress-bar {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 1.2rem;
+        padding-bottom: 0.8rem;
+        scrollbar-width: none;
+    }
+
+    .wizard-progress-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .wiz-step {
+        flex-shrink: 0;
+        min-width: 68px;
+    }
+
+    .checkbox-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .cb-card {
+        padding: 0.9rem 0.6rem;
+    }
+
+    .cb-card i {
+        font-size: 1.3rem;
+    }
+
+    .cb-card span {
+        font-size: 0.78rem;
+    }
+
+    .bundle-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* BOQ & Results Dashboard */
+    .estimator-results-dashboard {
+        padding: 1.2rem 1rem;
+    }
+
+    .boq-invoice-card {
+        padding: 1.2rem 1rem;
+    }
+
+    .boq-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .boq-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .estimator-action-buttons {
+        flex-direction: column;
+    }
+
+    .estimator-action-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Products Page Catalog */
+    .category-pills-bar {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        scrollbar-width: none;
+        padding-bottom: 0.5rem;
+    }
+
+    .category-pills-bar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .pill-btn {
+        flex-shrink: 0;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Modals Mobile Sizing */
+    .modal-card {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 1.2rem;
+    }
+
+    .qv-img-box img {
+        height: 200px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sticky-bottom-bar {
+        display: flex;
+    }
+
+    body {
+        padding-bottom: 68px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.85rem;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .search-input-group {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 0.8rem;
+        gap: 0.5rem;
+    }
+
+    .search-input-group .btn {
+        width: 100%;
+    }
+
+    .checkbox-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 

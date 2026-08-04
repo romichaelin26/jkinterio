@@ -20,29 +20,34 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 3. Mobile Navigation Drawer
-    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileToggles = document.querySelectorAll('#mobile-toggle, #hamburger-menu');
     const navMenu = document.getElementById('nav-menu');
-    if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
-            if (icon) {
-                icon.classList.toggle('fa-bars');
-                icon.classList.toggle('fa-xmark');
-            }
-        });
-    }
+
+    mobileToggles.forEach(toggle => {
+        if (toggle && navMenu) {
+            toggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                const icon = toggle.querySelector('i');
+                if (icon) {
+                    icon.classList.toggle('fa-bars');
+                    icon.classList.toggle('fa-xmark');
+                }
+            });
+        }
+    });
 
     // Close menu when link is clicked
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
+            if (navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
-                const icon = mobileToggle.querySelector('i');
-                if (icon) {
-                    icon.classList.add('fa-bars');
-                    icon.classList.remove('fa-xmark');
-                }
+                mobileToggles.forEach(toggle => {
+                    const icon = toggle.querySelector('i');
+                    if (icon) {
+                        icon.classList.add('fa-bars');
+                        icon.classList.remove('fa-xmark');
+                    }
+                });
             }
         });
     });
